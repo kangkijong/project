@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//struct
 typedef struct player
 {
     char name[30];
@@ -13,14 +13,14 @@ typedef struct player
     int height;
     int number;
 }Player;
-
+//function
 void Add(Player * arr, int * pnum);
 void Delete(Player * arr, int * pnum);
 void Print_List(Player * arr, int pnum);
 void Search(Player * arr, int * pnum);
 void Save_Data(Player * arr, int pnum);
-void Load_Data(Player * arr, int * pnum);
-
+void Load_Data(Player * arr, int * pnum);   //new function
+//global
 Player arr[100];
 int pnum = 0;
 
@@ -95,7 +95,7 @@ void Add(Player * arr, int * pnum)
     scanf("%s", name);
     printf("   Nation : ");
     scanf("%s", nation);
-    printf("   League : 1. Premier / 2. La Liga / 3.Serie A / 4. Bundesliga\n");
+    printf("   League : 1. Premier / 2. La Liga / 3.Serie A / 4. Bundesliga\n");    //new
     printf("   >>Select : ");
     scanf("%d", &l);
     fflush(stdin);
